@@ -6,7 +6,6 @@ A Django-based web application that allows users to rent books online. It provid
 
 - Features
 
-- Usage
 
 ## About the Project
 The Online Book Rental system enables users to browse, rent, and return books through an intuitive web interface. The application includes an admin panel for managing books, users, and rentals.
