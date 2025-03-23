@@ -1,0 +1,97 @@
+<html>
+<head>
+    {% load static %}
+    <title>Book Rental</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.nav-link{
+    color:green !important;
+    margin-right: 4px
+    }
+
+.nav-link:hover{
+    color:yellow !important;
+    font-weight: bold;
+    background-color:green;
+    border-radius:10px;
+    }
+
+.navbar-brand:hover{
+    color:red !important;
+
+    }
+</style>
+</head>
+<body>
+
+<div >
+    <div class="row">
+        <div class="col-sm-3 ">
+                  <img src="{% static 'images/10.jpg' %}" width="380px" height="150px" title="Room Booking">
+        </div>
+
+        <div class="col-sm-6 mt-5 text-center">
+                  <span style="font-weight: bold; font-size:35px">
+                        <span style="color:red">Lucknow Book</span>
+                        <span style="color:green">Rental Services</span>
+                  </span>
+        </div>
+
+        <div class="col-sm-3 mt-5" style="padding-left:8%">
+            <span style="font-weight:bold ; font-size:30px">
+                <span><a href="https://twitter.com/" target="_blank"> <i class="fa fa-twitter pl-2"></i></a></span>
+                <span><a href="www.linkedin.com/in/vikas-yadav-22a3462b9" target="_blank"><i class="fa fa-linkedin pl-2"></i></a></span>
+                <span><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram pl-2"></i></a></span>
+                <span><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook pl-2"></i></a></span>
+                <span><a href="https://www.google.com/" target="_blank"><i class="fa fa-google pl-2"></i></a></span>
+            </span>
+        </div>
+
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-sm" style="background-color:yellow">
+    <a class="navbar-brand text-red pl-2 font-weight" style="font-family:'elephant'; font-size:20px">Book Rental</a>
+
+<ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'admin_home' %}" style="margin-left:100px"><i class="fa fa-home"></i>Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'view_users' %}"><i class="fa fa-users"></i>View Users</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'view_booking_admin' %}"><i class="fa fa-eye"></i>View Booking</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'add_book' %}"><i class="fa fa-plus-square"></i>Add Book</a>
+    </li>
+
+     <li class="nav-item">
+        <a class="nav-link" href="{% url 'view_book_admin' %}"><i class="fa fa-street-view"></i>View Book</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'change_passwordadmin' %}"><i class="fa fa-key"></i>Change Password</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'view_feedback' %}"><i class="fa fa-eye"></i>View Feedback</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'Logout' %}"><i class="fa fa-user-plus"></i>Logout</a>
+    </li>
+</ul>
+</nav>
+
+</body>
+</html>
